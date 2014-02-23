@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -6658,16 +6658,16 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <pin name="P2_5" x="-53.34" y="30.48" length="middle" direction="pas"/>
 <pin name="P2_6" x="-53.34" y="27.94" length="middle" direction="pas"/>
 <pin name="P2_7" x="-53.34" y="25.4" length="middle" direction="pas"/>
-<pin name="P12_4_I2C0_SCL" x="-53.34" y="22.86" length="middle" direction="pas"/>
-<pin name="P12_5_I2C0_SDA" x="-53.34" y="20.32" length="middle" direction="pas"/>
+<pin name="P12_4_SCL0_SIO" x="-53.34" y="22.86" length="middle" direction="pas"/>
+<pin name="P12_5_SDA0_SIO" x="-53.34" y="20.32" length="middle" direction="pas"/>
 <pin name="P6_4" x="-53.34" y="17.78" length="middle" direction="pas"/>
 <pin name="P6_5" x="-53.34" y="15.24" length="middle" direction="pas"/>
 <pin name="P6_6" x="-53.34" y="12.7" length="middle" direction="pas"/>
 <pin name="P6_7" x="-53.34" y="10.16" length="middle" direction="pas"/>
-<pin name="VSSD@10" x="-53.34" y="7.62" length="middle" direction="pas"/>
-<pin name="NC@11" x="-53.34" y="5.08" length="middle" direction="pas"/>
-<pin name="VSSD@12" x="-53.34" y="2.54" length="middle" direction="pas"/>
-<pin name="VSSD@13" x="-53.34" y="0" length="middle" direction="pas"/>
+<pin name="VSSB" x="-53.34" y="7.62" length="middle" direction="pas"/>
+<pin name="IND" x="-53.34" y="5.08" length="middle" direction="pas"/>
+<pin name="VBOOST" x="-53.34" y="2.54" length="middle" direction="pas"/>
+<pin name="VBAT" x="-53.34" y="0" length="middle" direction="pas"/>
 <pin name="VSSD@14" x="-53.34" y="-2.54" length="middle" direction="pas"/>
 <pin name="!XRES!" x="-53.34" y="-5.08" length="middle" direction="pas"/>
 <pin name="P5_0" x="-53.34" y="-7.62" length="middle" direction="pas"/>
@@ -6683,8 +6683,8 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <pin name="VDDIO1@26" x="-30.48" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="P1_6" x="-27.94" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="P1_7" x="-25.4" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P12_6" x="-22.86" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P12_7" x="-20.32" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P12_6_SIO" x="-22.86" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P12_7_SIO" x="-20.32" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="P5_4" x="-17.78" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="P5_5" x="-15.24" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="P5_6" x="-12.7" y="-53.34" length="middle" direction="pas" rot="R90"/>
@@ -6696,21 +6696,21 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <pin name="VCCD@39" x="2.54" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="NC@40" x="5.08" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="NC@41" x="7.62" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P15_0_MXTLO" x="10.16" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P15_1_MXTLI" x="12.7" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P3_0" x="15.24" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P3_1" x="17.78" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P3_2" x="20.32" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P3_3" x="22.86" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P3_4" x="25.4" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P3_5" x="27.94" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P15_0_MXO" x="10.16" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P15_1_MXI" x="12.7" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P3_0_IDAC1" x="15.24" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P3_1_IDAC3" x="17.78" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P3_2_OA3-_REF1" x="20.32" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P3_3_OA3+" x="22.86" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P3_4_OA1-" x="25.4" y="-53.34" length="middle" direction="pas" rot="R90"/>
+<pin name="P3_5_OA1+" x="27.94" y="-53.34" length="middle" direction="pas" rot="R90"/>
 <pin name="VDDIO3@50" x="30.48" y="-53.34" length="middle" direction="pas" rot="R90"/>
-<pin name="P3_6" x="53.34" y="-30.48" length="middle" direction="pas" rot="R180"/>
-<pin name="P3_7" x="53.34" y="-27.94" length="middle" direction="pas" rot="R180"/>
-<pin name="P12_0_I2C1_SCL" x="53.34" y="-25.4" length="middle" direction="pas" rot="R180"/>
-<pin name="P12_1_I2C1_SDA" x="53.34" y="-22.86" length="middle" direction="pas" rot="R180"/>
-<pin name="P15_2_KXTLO" x="53.34" y="-20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="P15_3_KXTLI" x="53.34" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="P3_6_OA1OUT" x="53.34" y="-30.48" length="middle" direction="pas" rot="R180"/>
+<pin name="P3_7_OA3OUT" x="53.34" y="-27.94" length="middle" direction="pas" rot="R180"/>
+<pin name="P12_0_SCL1_SIO" x="53.34" y="-25.4" length="middle" direction="pas" rot="R180"/>
+<pin name="P12_1_SDA1_SIO" x="53.34" y="-22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="P15_2_KXO" x="53.34" y="-20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="P15_3_KXI" x="53.34" y="-17.78" length="middle" direction="pas" rot="R180"/>
 <pin name="NC@57" x="53.34" y="-15.24" length="middle" direction="pas" rot="R180"/>
 <pin name="NC@58" x="53.34" y="-12.7" length="middle" direction="pas" rot="R180"/>
 <pin name="NC@59" x="53.34" y="-10.16" length="middle" direction="pas" rot="R180"/>
@@ -6721,19 +6721,19 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <pin name="VSSA@64" x="53.34" y="2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="VDDA@65" x="53.34" y="5.08" length="middle" direction="pas" rot="R180"/>
 <pin name="VSSD@66" x="53.34" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="P12_2" x="53.34" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="P12_3" x="53.34" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="P12_2_SIO" x="53.34" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="P12_3_SIO" x="53.34" y="12.7" length="middle" direction="pas" rot="R180"/>
 <pin name="P4_0" x="53.34" y="15.24" length="middle" direction="pas" rot="R180"/>
 <pin name="P4_1" x="53.34" y="17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="P0_0" x="53.34" y="20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="P0_1" x="53.34" y="22.86" length="middle" direction="pas" rot="R180"/>
-<pin name="P0_2" x="53.34" y="25.4" length="middle" direction="pas" rot="R180"/>
-<pin name="P0_3" x="53.34" y="27.94" length="middle" direction="pas" rot="R180"/>
+<pin name="P0_0_OA2OUT" x="53.34" y="20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="P0_1_OA0OUT" x="53.34" y="22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="P0_2_OA0+_SAR1REF" x="53.34" y="25.4" length="middle" direction="pas" rot="R180"/>
+<pin name="P0_3_OA0-_REF0" x="53.34" y="27.94" length="middle" direction="pas" rot="R180"/>
 <pin name="VDDIO0@75" x="53.34" y="30.48" length="middle" direction="pas" rot="R180"/>
-<pin name="P0_4" x="30.48" y="53.34" length="middle" direction="pas" rot="R270"/>
-<pin name="P0_5" x="27.94" y="53.34" length="middle" direction="pas" rot="R270"/>
-<pin name="P0_6" x="25.4" y="53.34" length="middle" direction="pas" rot="R270"/>
-<pin name="P0_7" x="22.86" y="53.34" length="middle" direction="pas" rot="R270"/>
+<pin name="P0_4_OA2+_" x="30.48" y="53.34" length="middle" direction="pas" rot="R270"/>
+<pin name="P0_5_OA2-" x="27.94" y="53.34" length="middle" direction="pas" rot="R270"/>
+<pin name="P0_6_IDAC0" x="25.4" y="53.34" length="middle" direction="pas" rot="R270"/>
+<pin name="P0_7_IDAC2" x="22.86" y="53.34" length="middle" direction="pas" rot="R270"/>
 <pin name="P4_2" x="20.32" y="53.34" length="middle" direction="pas" rot="R270"/>
 <pin name="P4_3" x="17.78" y="53.34" length="middle" direction="pas" rot="R270"/>
 <pin name="P4_4" x="15.24" y="53.34" length="middle" direction="pas" rot="R270"/>
@@ -6755,6 +6755,7 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <pin name="P2_3" x="-25.4" y="53.34" length="middle" direction="pas" rot="R270"/>
 <pin name="P2_4" x="-27.94" y="53.34" length="middle" direction="pas" rot="R270"/>
 <pin name="VDDIO2@100" x="-30.48" y="53.34" length="middle" direction="pas" rot="R270"/>
+<text x="33.02" y="45.72" size="1.524" layer="95" rot="R270">SAR0REF</text>
 </symbol>
 <symbol name="CY8CPSOC1-20PIN">
 <wire x1="-20.32" y1="15.24" x2="25.4" y2="15.24" width="0.254" layer="94"/>
@@ -8147,7 +8148,7 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <device name="" package="TQFP-14X14-100">
 <connects>
 <connect gate="G$1" pin="!XRES!" pad="15"/>
-<connect gate="G$1" pin="NC@11" pad="11"/>
+<connect gate="G$1" pin="IND" pad="11"/>
 <connect gate="G$1" pin="NC@40" pad="40"/>
 <connect gate="G$1" pin="NC@41" pad="41"/>
 <connect gate="G$1" pin="NC@57" pad="57"/>
@@ -8156,26 +8157,26 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <connect gate="G$1" pin="NC@60" pad="60"/>
 <connect gate="G$1" pin="NC@61" pad="61"/>
 <connect gate="G$1" pin="NC@62" pad="62"/>
-<connect gate="G$1" pin="P0_0" pad="71"/>
-<connect gate="G$1" pin="P0_1" pad="72"/>
-<connect gate="G$1" pin="P0_2" pad="73"/>
-<connect gate="G$1" pin="P0_3" pad="74"/>
-<connect gate="G$1" pin="P0_4" pad="76"/>
-<connect gate="G$1" pin="P0_5" pad="77"/>
-<connect gate="G$1" pin="P0_6" pad="78"/>
-<connect gate="G$1" pin="P0_7" pad="79"/>
-<connect gate="G$1" pin="P12_0_I2C1_SCL" pad="53"/>
-<connect gate="G$1" pin="P12_1_I2C1_SDA" pad="54"/>
-<connect gate="G$1" pin="P12_2" pad="67"/>
-<connect gate="G$1" pin="P12_3" pad="68"/>
-<connect gate="G$1" pin="P12_4_I2C0_SCL" pad="4"/>
-<connect gate="G$1" pin="P12_5_I2C0_SDA" pad="5"/>
-<connect gate="G$1" pin="P12_6" pad="29"/>
-<connect gate="G$1" pin="P12_7" pad="30"/>
-<connect gate="G$1" pin="P15_0_MXTLO" pad="42"/>
-<connect gate="G$1" pin="P15_1_MXTLI" pad="43"/>
-<connect gate="G$1" pin="P15_2_KXTLO" pad="55"/>
-<connect gate="G$1" pin="P15_3_KXTLI" pad="56"/>
+<connect gate="G$1" pin="P0_0_OA2OUT" pad="71"/>
+<connect gate="G$1" pin="P0_1_OA0OUT" pad="72"/>
+<connect gate="G$1" pin="P0_2_OA0+_SAR1REF" pad="73"/>
+<connect gate="G$1" pin="P0_3_OA0-_REF0" pad="74"/>
+<connect gate="G$1" pin="P0_4_OA2+_" pad="76"/>
+<connect gate="G$1" pin="P0_5_OA2-" pad="77"/>
+<connect gate="G$1" pin="P0_6_IDAC0" pad="78"/>
+<connect gate="G$1" pin="P0_7_IDAC2" pad="79"/>
+<connect gate="G$1" pin="P12_0_SCL1_SIO" pad="53"/>
+<connect gate="G$1" pin="P12_1_SDA1_SIO" pad="54"/>
+<connect gate="G$1" pin="P12_2_SIO" pad="67"/>
+<connect gate="G$1" pin="P12_3_SIO" pad="68"/>
+<connect gate="G$1" pin="P12_4_SCL0_SIO" pad="4"/>
+<connect gate="G$1" pin="P12_5_SDA0_SIO" pad="5"/>
+<connect gate="G$1" pin="P12_6_SIO" pad="29"/>
+<connect gate="G$1" pin="P12_7_SIO" pad="30"/>
+<connect gate="G$1" pin="P15_0_MXO" pad="42"/>
+<connect gate="G$1" pin="P15_1_MXI" pad="43"/>
+<connect gate="G$1" pin="P15_2_KXO" pad="55"/>
+<connect gate="G$1" pin="P15_3_KXI" pad="56"/>
 <connect gate="G$1" pin="P15_4" pad="93"/>
 <connect gate="G$1" pin="P15_5" pad="94"/>
 <connect gate="G$1" pin="P15_6_DP" pad="35"/>
@@ -8196,14 +8197,14 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <connect gate="G$1" pin="P2_5" pad="1"/>
 <connect gate="G$1" pin="P2_6" pad="2"/>
 <connect gate="G$1" pin="P2_7" pad="3"/>
-<connect gate="G$1" pin="P3_0" pad="44"/>
-<connect gate="G$1" pin="P3_1" pad="45"/>
-<connect gate="G$1" pin="P3_2" pad="46"/>
-<connect gate="G$1" pin="P3_3" pad="47"/>
-<connect gate="G$1" pin="P3_4" pad="48"/>
-<connect gate="G$1" pin="P3_5" pad="49"/>
-<connect gate="G$1" pin="P3_6" pad="51"/>
-<connect gate="G$1" pin="P3_7" pad="52"/>
+<connect gate="G$1" pin="P3_0_IDAC1" pad="44"/>
+<connect gate="G$1" pin="P3_1_IDAC3" pad="45"/>
+<connect gate="G$1" pin="P3_2_OA3-_REF1" pad="46"/>
+<connect gate="G$1" pin="P3_3_OA3+" pad="47"/>
+<connect gate="G$1" pin="P3_4_OA1-" pad="48"/>
+<connect gate="G$1" pin="P3_5_OA1+" pad="49"/>
+<connect gate="G$1" pin="P3_6_OA1OUT" pad="51"/>
+<connect gate="G$1" pin="P3_7_OA3OUT" pad="52"/>
 <connect gate="G$1" pin="P4_0" pad="69"/>
 <connect gate="G$1" pin="P4_1" pad="70"/>
 <connect gate="G$1" pin="P4_2" pad="80"/>
@@ -8228,6 +8229,8 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <connect gate="G$1" pin="P6_5" pad="7"/>
 <connect gate="G$1" pin="P6_6" pad="8"/>
 <connect gate="G$1" pin="P6_7" pad="9"/>
+<connect gate="G$1" pin="VBAT" pad="13"/>
+<connect gate="G$1" pin="VBOOST" pad="12"/>
 <connect gate="G$1" pin="VCCA@63" pad="63"/>
 <connect gate="G$1" pin="VCCD@39" pad="39"/>
 <connect gate="G$1" pin="VCCD@86" pad="86"/>
@@ -8239,9 +8242,7 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 <connect gate="G$1" pin="VDDIO2@100" pad="100"/>
 <connect gate="G$1" pin="VDDIO3@50" pad="50"/>
 <connect gate="G$1" pin="VSSA@64" pad="64"/>
-<connect gate="G$1" pin="VSSD@10" pad="10"/>
-<connect gate="G$1" pin="VSSD@12" pad="12"/>
-<connect gate="G$1" pin="VSSD@13" pad="13"/>
+<connect gate="G$1" pin="VSSB" pad="10"/>
 <connect gate="G$1" pin="VSSD@14" pad="14"/>
 <connect gate="G$1" pin="VSSD@38" pad="38"/>
 <connect gate="G$1" pin="VSSD@66" pad="66"/>
@@ -8249,7 +8250,7 @@ THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MPN" value="CY8C5588AXI-060" constant="no"/>
+<attribute name="MPN" value="CY8C5888AXI-LPx" constant="no"/>
 </technology>
 </technologies>
 </device>
